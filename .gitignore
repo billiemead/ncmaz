@@ -1,0 +1,73 @@
+# WordPress #
+############
+/vendor
+/wordpress
+/wp-content
+/wp-admin
+/wp-includes
+wordpres/wp-config-local.php
+wp-cli.local.yml
+wp-activate.php
+wp-blog-header.php
+wp-comments-post.php
+wp-config.php
+wp-config-sample.php
+wp-cron.php
+wp-links-opml.php
+wp-load.php
+wp-login.php
+wp-mail.php
+wp-settings.php
+wp-signup.php
+wp-trackback.php
+xmlrpc.php
+readme.html
+license.txt
+index.php
+.vscode
+
+# @TODO writable paths
+wordpress/wp-content/cache/
+wordpress/wp-content/backups/
+
+# Packages #
+############
+*.7z
+*.dmg
+*.gz
+*.bz2
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+*.tgz
+!wordpress/wp-includes/**/*.gz
+
+# Logs and databases #
+######################
+*.log
+*.sql
+
+# OS generated files #
+######################
+.DS_Store*
+ehthumbs.db
+Thumbs.db
+._*
+
+# Vim generated files #
+######################
+*.un~
+
+# SASS #
+##########
+.sass-cache
+
+# PhpStorm #
+.idea
+.idea/*
+
+# node_modules #
+wordpress/wp-content/themes/**/node_modules/
+wordpress/wp-content/plugins/**/node_modules/

@@ -1,0 +1,42 @@
+{
+    "name": "billiemead/ncmaz",
+    "description": "theme and plugin management",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Billie Mead",
+            "email": "billie@billiemead.com"
+        }
+    ],
+    "require": {
+        "johnpbloch/wordpress": "^6.5"
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://wpackagist.org",
+            "only": [
+                "wpackagist-plugin/*",
+                "wpackagist-theme/*"
+            ]
+        }
+    ],
+    "extra": {
+        "installer-paths": {
+            "wordpress/wp-content/mu-plugins/{$name}/": [
+                "type:wordpress-muplugin"
+            ],
+            "wordpress/wp-content/plugins/{$name}/": [
+                "type:wordpress-plugin"
+            ],
+            "wordpress/wp-content/themes/{$name}/": [
+                "type:wordpress-theme"
+            ]
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "johnpbloch/wordpress-core-installer": true
+        }
+    }
+}
